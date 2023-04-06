@@ -1,6 +1,6 @@
 import pandas as pd
+import logging
 
 def get_training_data():
-    print("Getting training data")
-    print("Updatedagain!!! This again one last time")
+    logging.info("Loading training data...")
     return pd.read_csv("/kaggle/input/facial-keypoints-detection/training.zip")
